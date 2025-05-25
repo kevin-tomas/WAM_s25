@@ -7,14 +7,14 @@ Kevin Tomas
 ### Project 1: The Fig Tree
 
 - **Site:** [View Project](https://kevin-tomas.github.io/The-Fig-Tree-Final/)
-- **Code:** [Browse Code](./p1-responsive-system/)
+- **Code:** [View Code](./p1-responsive-system/)
 
 ### Project 2: Distance Clock
 
 - **Site:** [View Project](https://kevin-tomas.github.io/DistanceClock/)
-- **Code:** [Browse Code](./p2-friction/)
+- **Code:** [View Code](./p2-friction/)
 
 ### Project 3: It's Been A Day
 
 - **Site:** [View Project](https://kevin-tomas.github.io/ItsBeenADay/)
-- **Code:** [Browse Code](./p3-open-project/)
+- **Code:** [View Code](./p3-open-project/)
