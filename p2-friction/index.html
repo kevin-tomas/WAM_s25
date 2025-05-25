@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clock For My Mom</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png?">
+</head>
+
+<body>
+
+    <section class="page--section">
+        <div id="clock--box">
+            <div id="hour_hand">
+                <div class="dot_label" id="hour_label" style="background-color: rgb(254, 222, 222);">
+                    Kevin
+                </div>
+                <div class="hour_dot"></div>
+            </div>
+            <div id="hour_backhand">
+                <div class="dot_label" id="hour_back_label" style="background-color: rgb(217, 255, 252);">
+                    Mom & Dad
+                </div>
+                <div class="back_hour_dot"></div>
+            </div>
+            <div id="hour_forwardhand">
+                <div class="dot_label" id="hour_forward_label" style="background-color: rgb(245, 255, 182);">
+                    Erin
+                </div>
+                <div class="forward_hour_dot"></div>
+            </div>
+            <div id="sec_hand">
+                <div class="sec_dot"></div>
+            </div>
+            <div id="min_hand">
+                <div class="min_dot"></div>
+            </div>
+            
+        </div>
+
+        <div class="lines_container">
+            <div class="line" style="transform: rotate(0deg);">
+                <div class="line_label"> 12am</div>
+            </div>
+            <div class="line" style="transform: rotate(30deg);">
+                <div class="line_label" style="transform: rotate(-90deg);"> 2am</div>
+            </div>
+            <div class="line" style="transform: rotate(60deg);">
+                <div class="line_label" style="transform: rotate(-90deg);"> 4am</div>
+            </div>
+            <div class="line" style="transform: rotate(90deg);">
+                <div class="line_label" style="transform: rotate(-90deg);"> 6am</div>
+            </div>
+            <div class="line" style="transform: rotate(120deg);">
+                <div class="line_label" style="transform: rotate(-90deg);"> 8am</div>
+            </div>
+            <div class="line" style="transform: rotate(150deg);">
+                <div class="line_label" style="transform: rotate(-90deg);"> 10am</div>
+            </div>
+            <div class="line" style="transform: rotate(180deg);">
+                <div class="line_label" style="transform: rotate(-180deg);"> 12pm</div>
+            </div>
+            <div class="line" style="transform: rotate(210deg);">
+                <div class="line_label" style="transform: rotate(90deg);"> 2pm</div>
+            </div>
+            <div class="line" style="transform: rotate(240deg);">
+                <div class="line_label" style="transform: rotate(90deg);"> 4pm</div>
+            </div>
+            <div class="line" style="transform: rotate(270deg);">
+                <div class="line_label" style="transform: rotate(90deg);"> 6pm</div>
+            </div>
+            <div class="line" style="transform: rotate(300deg);">
+                <div class="line_label" style="transform: rotate(90deg);"> 8pm</div>
+            </div>
+            <div class="line" style="transform: rotate(330deg);">
+                <div class="line_label" style="transform: rotate(90deg);"> 10pm</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+    <div class="call-buttons">
+        <button id="call-kevin-btn" class="call-btn" disabled>
+         Call Kevin
+        </button>
+        <button id="call-erin-btn" class="call-btn" disabled>
+         Call Erin  
+        </button>
+    </div>
+</body>
+
+</html>
