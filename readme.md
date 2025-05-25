@@ -16,5 +16,5 @@ Kevin Tomas
 
 ### Project 3: It's Been A Day
 
-- **Site:** [View Project](https://kevin-tomas.github.io/ItsBeenADay/index.html/)
+- **Site:** [View Project](https://kevin-tomas.github.io/ItsBeenADay/)
 - **Code:** [Browse Code](./p3-open-project/)
