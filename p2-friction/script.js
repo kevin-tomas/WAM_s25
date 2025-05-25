@@ -114,9 +114,6 @@ function updateCallButtonStates() {
     }
 
     requestAnimationFrame(updateCallButtonStates);
-
-    console.log("Is Kevin available:", isKevinAvailable);
-    console.log("Is Erin available:", isErinAvailable);
 }
 
 function showMessage(index = null) {
@@ -162,11 +159,9 @@ function loadRandomMessageOnPageLoad() {
     showMessage(Math.floor(Math.random() * messages.length));
 }
 
-// Initial animation frame requests
 requestAnimationFrame(updateClock);
 requestAnimationFrame(updateDotColors);
 
-// DOM Ready setup
 document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(updateCallButtonStates);
     setupMessageButton();
