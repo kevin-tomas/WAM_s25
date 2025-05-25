@@ -528,14 +528,10 @@
         function appendToSheet(data) {
             $('#result-message').html('<span class="loading"></span> Processing...').removeClass('success').removeClass('error').show();
             
-            console.log('Submitting data to script URL:', scriptURL);
-            console.log('Form data:', data);
-            
             const formData = new FormData();
             
             Object.keys(data).forEach(key => {
                 formData.append(key, data[key]);
-                console.log(`Adding to FormData: ${key} = ${data[key]}`);
             });
             
             return fetch(scriptURL, {
@@ -543,9 +539,6 @@
                 body: formData
             })
             .then(response => {
-                console.log('Response status:', response.status);
-                console.log('Response headers:', [...response.headers.entries()]);
-                
                 if (!response.ok) {
                     return response.text().then(text => {
                         console.error('Error response text:', text);
@@ -558,7 +551,6 @@
                 }
                 
                 return response.text().then(text => {
-                    console.log('Success response text:', text);
                     try {
                         return JSON.parse(text);
                     } catch (e) {
@@ -596,7 +588,6 @@
                 
                 appendToSheet(formData)
                     .then(response => {
-                        console.log('Success:', response);
                         $('#result-message').html('Your day has been submitted successfully!').removeClass('error').addClass('success').show();
                         
                         $('#day-form')[0].reset();

@@ -50,9 +50,7 @@ function loadIndexData() {
     fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
-                console.log("Response status:", response.status);
                 return response.text().then(text => {
-                    console.log("Error response body:", text);
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 });
             }

@@ -1,4 +1,3 @@
-// Function to set up the sticky header navigation
 function setupStickyHeader() {
     function updatePill() {
         const $activeItem = $('.nav-item.active');
@@ -255,9 +254,7 @@ function loadDataFromGoogleSheets() {
     fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
-                console.log("Response status:", response.status);
                 return response.text().then(text => {
-                    console.log("Error response body:", text);
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 });
             }
